@@ -419,15 +419,15 @@ export default function UnifiedQuiz() {
   // Load Vturb script when final screen completes
   useEffect(() => {
     if (!isComplete) return
-    const DELAY_SECONDS = 448 // 7:28
+    const DELAY_SECONDS = 696 // 11:36
     const timer = setTimeout(() => {
       if (vturbRef.current && !vturbRef.current.querySelector("vturb-smartplayer")) {
         const player = document.createElement("vturb-smartplayer")
-        player.id = "vid-69990b836aee4c1df8327a79"
+        player.id = "vid-69f54851429b5d0eef50faf1"
         player.style.cssText = "display: block; margin: 0 auto; width: 100%; max-width: 400px;"
         vturbRef.current.appendChild(player)
         const s = document.createElement("script")
-        s.src = "https://scripts.converteai.net/f8e465b5-f483-4d08-be19-bc14de388e59/players/69990b836aee4c1df8327a79/v4/player.js"
+        s.src = "https://scripts.converteai.net/f8e465b5-f483-4d08-be19-bc14de388e59/players/69f54851429b5d0eef50faf1/v4/player.js"
         s.async = true
         document.head.appendChild(s)
 
